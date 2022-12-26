@@ -38,7 +38,11 @@ export default function UpdateScorePage() {
      kindness,
      behavior,
      strayCat,
-     other
+     other,
+     fireExtinguisher,
+     cleanCabin,
+     reallyBadBehavior,
+     skunkCabin
    } = pointOptions;
 
    const onSubmit = async (data) => {
@@ -116,11 +120,22 @@ export default function UpdateScorePage() {
                   <option value={games.second}>
                     Second Place: {games.second}
                   </option>
+                  <option value={games.spontaneous}>
+                    Spontaneous Place: {games.spontaneous}
+                  </option>
                   <option value={spirit}> Spirit: {spirit}</option>
+                  <option value={fireExtinguisher}>
+                    Fire Extinguisher: {fireExtinguisher}
+                  </option>
                   <option value={unicorn}> Unicorn: {unicorn}</option>
                   <option value={idols}> Idols: {idols}</option>
+                  <option value={cleanCabin}> Clean Cabin: {cleanCabin}</option>
                   <option value={kindness}> Kindness: {kindness}</option>
                   <option value={behavior}> Behavior: {behavior}</option>
+                  <option value={reallyBadBehavior}>
+                    Really Bad Behavior: {reallyBadBehavior}
+                  </option>
+                  <option value={skunkCabin}> Skunk Cabin: {skunkCabin}</option>
                   <option value={strayCat}> Stray Cat: {strayCat}</option>
                   <option value={other.other1}> Other: {other.other1}</option>
                   <option value={other.other2}> Other: {other.other2}</option>
@@ -160,15 +175,17 @@ export default function UpdateScorePage() {
               </Flex>
               {isSubmitSuccessful && (
                 <>
-                <Heading as="h2" size="m" color="teal" mt={10}>
-                  Points submitted succesfully 😸
-                </Heading>
-                <Container bg='teal' color='white'>
-                  <Text>Team: {formData.team}</Text>
-                  <Text>Points: {formData.points}</Text>
-                  <Text>Reason: {formData.reason}</Text>
-                </Container>
-                <Text fontWeight="bold" color="teal" mt={3}>Reset form to add more points</Text>
+                  <Heading as="h2" size="m" color="teal" mt={10}>
+                    Points submitted succesfully 😸
+                  </Heading>
+                  <Container bg="teal" color="white">
+                    <Text>Team: {formData.team}</Text>
+                    <Text>Points: {formData.points}</Text>
+                    <Text>Reason: {formData.reason}</Text>
+                  </Container>
+                  <Text fontWeight="bold" color="teal" mt={3}>
+                    Reset form to add more points
+                  </Text>
                 </>
               )}
             </form>

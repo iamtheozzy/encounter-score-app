@@ -16,15 +16,20 @@ export const teamInfo = {
 
 export const pointOptions = {
   games: {
-    first: 500,
-    second: 250
+    first: 250,
+    second: 150,
+    spontaneous: 100,
   },
-  spirit: 100,
+  spirit: 75,
+  fireExtinguisher: 75,
   unicorn: 250,
   idols: 50,
-  kindness: 20,
+  cleanCabin: 50,
+  kindness: 25,
   behavior: -50,
-  strayCat: -10,
+  reallyBadBehavior: -100,
+  strayCat: -50,
+  skunkCabin: -50,
   other: {
     other1: 20,
     other2: 50
