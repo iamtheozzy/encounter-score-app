@@ -141,7 +141,7 @@ export default function UpdateScorePage() {
                   What they do to deserve these points?
                 </FormHelperText>
                 <FormErrorMessage>
-                  {errors.reason && errors.reason.message}
+                  {errors.team && 'Team is required'}
                 </FormErrorMessage>
               </FormControl>
               <Flex justifyContent="space-between" alignItems="center" mt={4}>
